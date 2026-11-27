@@ -1,15 +1,11 @@
-function App() {
+import MainLayout from "./layouts/MainLayout";
+
+export default function App() {
   return (
-    <main className="min-h-screen bg-slate-100 flex items-center justify-center">
-      <div className="bg-white p-10 rounded-2xl shadow-lg text-center">
-        <h1 className="text-4xl font-bold text-blue-600">Catálogo A7</h1>
+    <MainLayout>
+      <h2 className="text-2xl font-bold">Todos os produtos</h2>
 
-        <p className="mt-3 text-gray-500">Catálogo digital integrado ao A7 ERP</p>
-
-        <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 cursor-pointer">Explorar produtos</button>
-      </div>
-    </main>
+      <p className="mt-1 text-sm text-gray-500">Explore nosso catálogo e monte seu pedido.</p>
+    </MainLayout>
   );
 }
-
-export default App;
