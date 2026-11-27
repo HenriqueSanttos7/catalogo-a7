@@ -1,4 +1,3 @@
-```markdown
 # Catálogo Digital A7
 
 Catálogo digital integrado ao sistema A7 ERP da SIAH.
@@ -25,4 +24,3 @@ Os dados, endpoints, frequência de sincronização e regras de atualização de
 ## Suporte
 
 Para dúvidas ou solicitações, entre em contato com a equipe responsável pelo projeto e pela integração com o A7 ERP.
-```
