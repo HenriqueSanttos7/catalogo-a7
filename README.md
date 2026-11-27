@@ -1,75 +1,28 @@
-# React + TypeScript + Vite
+```markdown
+# Catálogo Digital A7
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Catálogo digital integrado ao sistema A7 ERP da SIAH.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto disponibiliza um catálogo digital de produtos e utiliza a integração com o A7 ERP para consultar ou sincronizar informações, conforme a configuração do ambiente.
 
-## React Compiler
+> **Status:** documentação inicial. Detalhes de instalação, funcionalidades e integração serão atualizados conforme o projeto evoluir.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requisitos
 
-## Expanding the ESLint configuration
+- Acesso ao ambiente do A7 ERP e às credenciais de integração autorizadas.
+- Dependências e versões necessárias: **EM DESENVOLVIMENTO**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Configuração e execução
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+As instruções de instalação, variáveis de ambiente e inicialização ainda serão documentadas.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Integração com o A7 ERP
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Os dados, endpoints, frequência de sincronização e regras de atualização dependem da configuração disponibilizada pela SIAH. Consulte a equipe responsável pelo A7 ERP antes de configurar a integração.
 
-```
+## Suporte
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+Para dúvidas ou solicitações, entre em contato com a equipe responsável pelo projeto e pela integração com o A7 ERP.
 ```
